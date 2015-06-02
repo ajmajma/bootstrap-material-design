@@ -82,22 +82,21 @@
       0px 32px 0 20px,
       -5px 5px 0 10px,
       20px -12px 0 11px;
-    animation: checkbox-on @checkbox-animation-check forwards;
   }
 
   input[type=checkbox]:not(:checked) + .checkbox-material:before {
-    animation: rippleOff @checkbox-animation-ripple;
+
   }
   input[type=checkbox]:checked + .checkbox-material:before {
-    animation: rippleOn @checkbox-animation-ripple;
+
   }
 
   // Ripple effect on click
   input[type=checkbox]:not(:checked) + .checkbox-material .check:after {
-    animation: rippleOff @checkbox-animation-ripple forwards;
+
   }
   input[type=checkbox]:checked + .checkbox-material .check:after {
-    animation: rippleOn @checkbox-animation-ripple forwards;
+
   }
 
   // Style for disabled inputs
@@ -146,72 +145,7 @@
   }
 }
 @keyframes checkbox-off {
-  0% {
-    box-shadow:
-      0 0 0 10px,
-      10px -10px 0 10px,
-      32px 0px 0 20px,
-      0px 32px 0 20px,
-      -5px 5px 0 10px,
-      20px -12px 0 11px,
-      0 0 0 0 inset;
-  }
-
-  25% {
-    box-shadow:
-      0 0 0 10px,
-      10px -10px 0 10px,
-      32px 0px 0 20px,
-      0px 32px 0 20px,
-      -5px 5px 0 10px,
-      20px -12px 0 11px,
-      0 0 0 0 inset;
-  }
-  50% {
-    transform: rotate(45deg);
-    margin-top: -4px;
-    margin-left: 6px;
-    width: 0px;
-    height: 0px;
-    box-shadow:
-      0 0 0 10px,
-      10px -10px 0 10px,
-      32px 0px 0 20px,
-      0px 32px 0 20px,
-      -5px 5px 0 10px,
-      15px 2px 0 11px,
-      0 0 0 0 inset;
-  }
-  51% {
-    transform: rotate(0deg);
-    margin-top: -2px;
-    margin-left: -2px;
-    width: 20px;
-    height: 20px;
-    box-shadow:
-      0 0 0 0,
-      0 0 0 0,
-      0 0 0 0,
-      0 0 0 0,
-      0 0 0 0,
-      0 0 0 0,
-      0px 0px 0 10px inset;
-  }
-  100% {
-    transform: rotate(0deg);
-    margin-top: -2px;
-    margin-left: -2px;
-    width: 20px;
-    height: 20px;
-    box-shadow:
-      0 0 0 0,
-      0 0 0 0,
-      0 0 0 0,
-      0 0 0 0,
-      0 0 0 0,
-      0 0 0 0,
-      0px 0px 0 0px inset;
-  }
+ 
 }
 @keyframes rippleOn {
   0% {
