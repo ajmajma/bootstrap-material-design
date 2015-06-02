@@ -64,10 +64,10 @@
 
     // Ripple effect on click
     input[type=checkbox]:not(:checked) ~ .check:after {
-        animation: rippleOff 500ms linear forwards;
+
     }
     input[type=checkbox]:checked ~ .check:after {
-        animation: rippleOn 500ms linear forwards;
+
     }
 
     // Make animate quickly when not hover
@@ -90,41 +90,7 @@
 }
 
 @keyframes uncheck {
-    0% {
-        top: -3px;
-        left: 17px;
-        width: 10px;
-        height: 21px;
-        border-color: #0f9d58;
-        border-left-color: transparent;
-        border-top-color: transparent;
-        transform: rotate(45deg);
-    }
-    50% {
-        top: 14px;
-        left: 17px;
-        width: 4px;
-        height: 4px;
-        transform: rotate(45deg);
-        border-color: #0f9d58;
-        border-left-color: transparent;
-        border-top-color: transparent;
-    }
-    51% {
-        border-color: #5a5a5a;
-        border-left-color: #5a5a5a;
-        border-top-color: #5a5a5a;
-    }
-    100% {
-        top: 1px;
-        left: 12px;
-        width: 18px;
-        height: 18px;
-        transform: rotate(0deg);
-        border-color: #5a5a5a;
-        border-left-color: #5a5a5a;
-        border-top-color: #5a5a5a;
-    }
+
 }
 
 @keyframes check {

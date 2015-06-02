@@ -3823,8 +3823,6 @@ body .jumbotron-material-blue-grey,
         0 0 0 0,
         0 0 0 0,
         0 0 0 0 inset;
-  -webkit-animation: checkbox-off 0.3s forwards;
-          animation: checkbox-off 0.3s forwards;
 }
 .checkbox input[type=checkbox]:focus + .checkbox-material .check:after {
   opacity: 0.2;
@@ -4120,10 +4118,10 @@ body .jumbotron-material-blue-grey,
   }
 }
 @-webkit-keyframes checkbox-off {
-  
+
 }
 @keyframes checkbox-off {
-  
+
 }
 @-webkit-keyframes rippleOn {
   0% {
